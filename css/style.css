@@ -272,3 +272,11 @@ img {
 
   border-bottom: 1px solid var(--white-20);
 }
+
+/* PLACEHOLDERS */
+
+.subscribe-email::placeholder {
+  color: var(--gray-4);
+  font-size: 16px;
+  line-height: 24px;
+}
