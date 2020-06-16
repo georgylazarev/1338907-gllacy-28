@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="page-body">
@@ -18,7 +19,7 @@
               <a class="main-menu-link" href="blank.html">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu-item">
-                  <a href="blank.html">Новинки</a>
+                  <a class="sub-menu-link" href="blank.html">Новинки</a>
                 </li>
                 <li class="sub-menu-item">
                   <a class="sub-menu-link" href="catalog.html">Сливочное</a>
@@ -46,13 +47,13 @@
         <div class="header-buttons">
           <a class="search-link" href="blank.html"><span class="visually-hidden">Поиск</span></a>
           <a class="auth-link" href="blank.html">Вход</a>
-          <button class="basket full">2 товара</button>
+          <button class="basket">Пусто</button>
         </div>
       </div>
       <div class="header-second-row">
         <div class="work-time-and-phone">
           <span class="work-time">с 10 до 20, ежедневно</span>
-          <span class="phone"><a href="tel:88124502525">8 812 450-25-25</a></span>
+          <span class="phone"><a class="phone-link" href="tel:88124502525">8 812 450-25-25</a></span>
         </div>
       </div>
     </header>
@@ -86,36 +87,36 @@
         <h2 class="visually-hidden">Популярные лакомства!</h2>
         <ul class="goods-list">
           <li class="goods-list-item">
-            <figure>
+            <figure class="goods-box">
               <img class="goods-item hit" src="img/cream-orange.jpg" alt="" width="267px" height="267px">
-              <figcaption>
+              <figcaption class="goods-box-caption">
                 <span class="visually-hidden">310 ₽/кг</span>
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </figcaption>
             </figure>
           </li>
           <li class="goods-list-item">
-            <figure>
+            <figure class="goods-box">
               <img class="goods-item hit" src="img/cream-coffee.jpg" alt="" width="267px" height="267px">
-              <figcaption>
+              <figcaption class="goods-box-caption">
                 <span class="visually-hidden">380 ₽/кг</span>
                 Сливочно-кофейное с кусочками шоколада
               </figcaption>
             </figure>
           </li>
           <li class="goods-list-item">
-            <figure>
+            <figure class="goods-box">
               <img class="goods-item hit" src="img/cream-strawberry.jpg" alt="" width="267px" height="267px">
-              <figcaption>
+              <figcaption class="goods-box-caption">
                 <span class="visually-hidden">355 ₽/кг</span>
                 Сливочно-клубничное с присыпкой из белого шоколада
               </figcaption>
             </figure>
           </li>
           <li class="goods-list-item">
-            <figure>
+            <figure class="goods-box">
               <img class="goods-item hit" src="img/cream-caramel.jpg" alt="" width="267px" height="267px">
-              <figcaption>
+              <figcaption class="goods-box-caption">
                 <span class="visually-hidden">415 ₽/кг</span>
                 Сливочное крем-брюле с карамельной подливкой
               </figcaption>
@@ -126,7 +127,7 @@
 
       <section class="info-block">
         <h2 class="visually-hidden">О магазине</h2>
-        <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <h2 class="info-header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -146,7 +147,7 @@
       <div class="bottom-blocks">
         <article class="news-blog">
           <h2 class="news-blog-header">Новое в нашем блоге</h2>
-          <a class="news-blog-link" href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="news-blog-link" href="blank.html">10 способов сервировки<br>фруктовых щербетов <br>к столу</a>
         </article>
 
         <article class="subscribe-block">
@@ -199,16 +200,16 @@
         <h2 class="visually-hidden">Информация и документы</h2>
         <ul class="documents-list">
           <li class="documents-list-item heart">
-            <a href="documents-link">Для поставщиков</a>
+            <a class="documents-link" href="blank.html">Для поставщиков</a>
           </li>
           <li class="documents-list-item">
-            <a href="documents-link">О производстве</a>
+            <a class="documents-link" href="blank.html">О производстве</a>
           </li>
           <li class="documents-list-item">
-            <a href="documents-link">Наши документы</a>
+            <a class="documents-link" href="blank.html">Наши документы</a>
           </li>
           <li class="documents-list-item">
-            <a href="documents-link">Экологические стандарты</a>
+            <a class="documents-link" href="blank.html">Экологические стандарты</a>
           </li>
         </ul>
       </section>
