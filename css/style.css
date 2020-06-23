@@ -44,87 +44,85 @@ white gradient FFFFFF 1 -> FFFFFF 0 0.2 */
 /* COMMON STYLES */
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 *, *::before, *::after {
   font-family: 'Roboto', 'Arial', sans-serif;
-
   box-sizing: border-box;
 }
 
 .page {
   height: 100%;
-
   background-color: var(--light-green);
 }
 
 .visually-hidden {
   position: absolute;
 
-  margin: -1px;
-  padding: 0;
-
   width: 1px;
   height: 1px;
 
+  padding: 0;
+  margin: -1px;
+
   overflow: hidden;
-  border: 0;
   clip: rect(0 0 0 0)
+  border: 0;
 }
 
 .orange-button {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
 
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
+  color: var(--base-white);
   text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 
+  cursor: pointer;
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   border: 0;
   border-radius: 70px;
-  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 /* TEXT AND FONTS */
 
 .main-menu-link {
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
   line-height: 18px;
+  color: var(--base-white);
   text-decoration: none;
 
   border-bottom: 1px solid var(--white-20);
 }
 
 .sub-menu-link {
-  color: var(--gray-1);
   font-size: 14px;
   line-height: 16px;
+  color: var(--gray-1);
   text-decoration: none;
 }
 
 .auth-link {
-  color: var(--base-white);
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
+  color: var(--base-white);
   text-decoration: none;
 }
 
 .basket {
-  color: var(--base-white);
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
+  color: var(--base-white);
   text-decoration: none;
 }
 
@@ -133,24 +131,24 @@ img {
 }
 
 .work-time {
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   line-height: 16px;
+  color: var(--base-white);
 }
 
 .phone-link {
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 22px;
+  font-weight: bold;
   line-height: 24px;
+  color: var(--base-white);
   text-decoration: none;
 }
 
 .breadcrumbs-link {
-  color: var(--base-white);
   font-size: 14px;
   line-height: 16px;
+  color: var(--base-white);
   text-decoration: none;
 
   border-bottom: 1px solid var(--white-20);
@@ -161,33 +159,33 @@ img {
 }
 
 .promotion h2 {
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 35px;
+  font-weight: bold;
   line-height: 41px;
+  color: var(--base-white);
 }
 
 .promotion p {
-  color: var(--base-white);
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   line-height: 22px;
+  color: var(--base-white);
 }
 
 .goods-box-caption {
-  color: var(--base-white);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 22px;
+  color: var(--base-white);
 
   border-bottom: 1px solid var(--white-20);
 }
 
 .paginator-link {
-  color: var(--base-white);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
+  color: var(--base-white);
   text-decoration: none;
 }
 
@@ -196,78 +194,78 @@ img {
 }
 
 .info-header {
-  color: var(--gray-1);
-  font-weight: 500;
   font-size: 24px;
+  font-weight: 500;
   line-height: 30px;
+  color: var(--gray-1);
 }
 
 .advantages-list-item {
-  color: var(--gray-1);
   font-size: 16px;
   line-height: 22px;
+  color: var(--gray-1);
 }
 
 .news-blog-header {
-  color: var(--gray-1);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 22px;
+  color: var(--gray-1);
 }
 
 .news-blog-link {
-  color: var(--gray-1);
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
   line-height: 30px;
+  color: var(--gray-1);
 }
 
 .subscribe-content p {
-  color: var(--gray-5);
   font-size: 16px;
   line-height: 22px;
+  color: var(--gray-5);
 }
 
 .contacts-label {
-  color: var(--gray-1);
   font-size: 14px;
   line-height: 20px;
+  color: var(--gray-1);
 }
 
 .contacts-content {
-  color: var(--gray-1);
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
+  color: var(--gray-1);
 }
 
 .contacts-content a {
-  color: var(--gray-1);
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
+  color: var(--gray-1);
   text-decoration: none;
 }
 
 .documents-link {
-  color: var(--base-white);
   font-size: 13px;
   line-height: 18px;
+  color: var(--base-white);
   text-decoration: none;
 
   border-bottom: 1px solid var(--white-20);
 }
 
 .design-by p {
-  color: var(--base-white);
   font-size: 12px;
   line-height: 18px;
+  color: var(--base-white);
 }
 
 .designer-link {
-  color: var(--base-white);
   font-size: 12px;
   line-height: 18px;
+  color: var(--base-white);
   text-decoration: none;
 
   border-bottom: 1px solid var(--white-20);
@@ -278,7 +276,7 @@ img {
 .subscribe-email::placeholder {
   height: 24px;
   
-  color: var(--gray-4);
   font-size: 16px;
   line-height: 24px;
+  color: var(--gray-4);
 }
