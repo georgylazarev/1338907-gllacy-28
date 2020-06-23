@@ -23,12 +23,16 @@
   --light-red: #e84d37;
   --very-light-green: #ecf1ee;
   --very-light-orange: #f8f7f4;
-  --very-light-red: #fbded7;
+  --very-light-red-1: #fbded7;
+  --very-light-red-2: #f6b5a5;
+  --very-light-red-3: #ffbc9e;
+
 
 /* opacity less 100% */
   --gray-20: rgba(50, 50, 50, 0.2);
   --white-20: rgba(255, 255, 255, 0.2);
   --black-30: rgba(0, 0, 0, 0.3);
+  --very-light-red-3-30: rgba(255, 188, 158, 0.3);
   --semi-gray-50: rgba(248, 247, 244, 0.5);
   --white-50: rgba(255, 255, 255, 0.5);
   --gray-52: rgba(178, 178, 178, 0.52);
@@ -93,6 +97,21 @@ img {
 
 /* TEXT AND FONTS */
 
+.white-link {
+  color: var(--base-white);
+  border-bottom: 1px solid var(--white-20);
+}
+
+.white-link:hover {
+  color: var(--very-light-red-3);
+  border-bottom: 1px solid var(--very-light-red-3-30);
+}
+
+.white-link:active {
+  color: var(--very-light-red-3);
+  border-bottom: 1px solid var(--very-light-red-3-30);
+}
+
 .main-menu-link {
   font-size: 16px;
   font-weight: bold;
@@ -103,11 +122,45 @@ img {
   border-bottom: 1px solid var(--white-20);
 }
 
+.main-menu-link:hover {
+  color: var(--base-black);
+  background-color: var(--base-white);
+
+  border-bottom: 0;
+}
+
+.main-menu-active {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: var(--base-white);
+  text-decoration: none;
+
+  background-color: var(--light-orange);
+}
+
 .sub-menu-link {
   font-size: 14px;
   line-height: 16px;
   color: var(--gray-1);
   text-decoration: none;
+}
+
+.sub-menu-link:hover {
+  background-color: var(--very-light-red-1);
+}
+
+.sub-menu-link:active {
+  background-color: var(--very-light-red-2);
+}
+
+.sub-menu-active {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--base-white);
+  text-decoration: none;
+
+  background-color: var(--light-orange);
 }
 
 .auth-link {
@@ -116,6 +169,12 @@ img {
   line-height: 16px;
   color: var(--base-white);
   text-decoration: none;
+}
+
+.auth-link:hover {
+  color: var(--gray-1);
+
+  background-color: var(--base-white);
 }
 
 .basket {
@@ -148,10 +207,7 @@ img {
 .breadcrumbs-link {
   font-size: 14px;
   line-height: 16px;
-  color: var(--base-white);
   text-decoration: none;
-
-  border-bottom: 1px solid var(--white-20);
 }
 
 .breadcrumbs-active {
@@ -177,7 +233,7 @@ img {
   font-weight: 500;
   line-height: 22px;
   color: var(--base-white);
-
+  
   border-bottom: 1px solid var(--white-20);
 }
 
@@ -250,10 +306,7 @@ img {
 .documents-link {
   font-size: 13px;
   line-height: 18px;
-  color: var(--base-white);
   text-decoration: none;
-
-  border-bottom: 1px solid var(--white-20);
 }
 
 .design-by p {
@@ -265,17 +318,14 @@ img {
 .designer-link {
   font-size: 12px;
   line-height: 18px;
-  color: var(--base-white);
   text-decoration: none;
-
-  border-bottom: 1px solid var(--white-20);
 }
 
 /* PLACEHOLDERS */
 
 .subscribe-email::placeholder {
   height: 24px;
-  
+
   font-size: 16px;
   line-height: 24px;
   color: var(--gray-4);
