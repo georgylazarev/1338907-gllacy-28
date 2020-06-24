@@ -59,7 +59,22 @@ img {
 
 .page {
   height: 100%;
+}
+
+.page-body {
+  height: 100%;
+
   background-color: var(--light-green);
+}
+
+.page-wrapper {
+  flex-direction: column;
+  display: flex;
+
+  width: 1200px;
+  min-height: 100%;
+
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -221,14 +236,14 @@ img {
   color: var(--base-white);
 }
 
-.promotion h2 {
+.promotion-block h2 {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
   color: var(--base-white);
 }
 
-.promotion p {
+.promotion-block p {
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
@@ -266,6 +281,20 @@ img {
   font-weight: 500;
   line-height: 18px;
   color: var(--base-white);
+}
+
+.goods-price {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  color: var(--base-white);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.kg {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
 }
 
 .goods-box-caption {
@@ -370,3 +399,178 @@ img {
   line-height: 24px;
   color: var(--gray-4);
 }
+
+/* HEADER */
+
+.page-header {
+  flex-direction: column;
+  display: flex;
+
+  padding: 0 27px;
+}
+
+.header-first-row {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header-second-row {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.page-header nav {
+  margin-right: auto;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+}
+
+.main-menu-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.sub-menu {
+}
+
+.sub-menu-item {}
+
+.header-buttons {}
+
+.work-time-and-phone {
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+}
+
+/* MANE PAGE */
+
+.page-mane {
+  flex-direction: column;
+  display: flex;
+}
+
+.page-mane section {
+  padding: 0 27px;
+  margin-top: 40px;
+}
+
+.slider {
+  height: 200px;
+  background-color: #ccc;
+}
+
+/* PROMOTION */
+
+.promotion {
+  justify-content: space-between;
+  display: flex;
+}
+
+.promotion-block {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+
+  width: 560px;
+  min-height: 229px;
+
+  padding-top: 16px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  padding-left: 16px;
+
+  border-radius: 16px;
+}
+
+.promotion-block h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.promotion-block p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.promotion-block a {
+  align-self: flex-end;
+  padding: 15px 22px;
+}
+
+.raspberry-promotion {
+  background-image: url('../img/raspberry-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chocolate-promotion {
+  background-image: url('../img/chocolate-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* GOODS HIT */
+
+.goods-hit {
+
+}
+
+.goods-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.goods-list-item {
+  width: 267px;
+}
+
+.goods-box {
+  margin: 0;
+  position: relative;
+}
+
+.goods-box figcaption {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.goods-item {
+  border-radius: 50%;
+}
+
+.goods-price {
+  position: absolute;
+  top: 216px;
+  left: 0;
+}
+
+.hit::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+
+  background-image: url('../img/hit.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+/* CATALOG */
+
+/* FOOTER */
