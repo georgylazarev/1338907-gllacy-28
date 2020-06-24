@@ -76,7 +76,36 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
-        <!-- Здесь будут фильтры -->
+        <form class="filters-form" name="filters" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters-fieldset">
+            <legend>Сортировка:</legend>
+            <select class="sort" name="sort">
+              <option value="popular">по популярности</option>
+              <option value="price-up">сначала недорогие</option>
+              <option value="price-down">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filters-fieldset">
+            <legend>Цена: 100 ₽ – 500 ₽</legend>
+          </fieldset>
+          <fieldset class="filters-fieldset">
+            <legend>Жирность:</legend>
+            <label class="filters-radio"><input type="radio" name="fat" value="0">0%</label>
+            <label class="filters-radio"><input type="radio" name="fat" value="10" checked>до 10%</label>
+            <label class="filters-radio"><input type="radio" name="fat" value="30">до 30%</label>
+            <label class="filters-radio"><input type="radio" name="fat" value="30-plus">выше 30%</label>
+          </fieldset>
+          <fieldset class="filters-fieldset">
+            <legend>Наполнители:</legend>
+            <label class="filters-checkbox"><input type="checkbox" name="filler-chocolate" checked>шоколадные</label>
+            <label class="filters-checkbox"><input type="checkbox" name="filler-shugar" checked>сахарные присыпки</label>
+            <label class="filters-checkbox"><input type="checkbox" name="filler-fruits">фрукты</label>
+            <label class="filters-checkbox"><input type="checkbox" name="filler-syrup">сиропы</label>
+            <label class="filters-checkbox"><input type="checkbox" name="filler-jam">джемы</label>
+          </fieldset>
+          <button class="filters-submit" type="submit">Применить</button>
+        </form>
       </section>
 
       <section class="goods-catalog">
