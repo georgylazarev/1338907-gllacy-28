@@ -571,6 +571,72 @@ img {
   content: "";
 }
 
+/* INFO BLOCK */
+
+section.info-block {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+
+  margin-right: 27px;
+  margin-left: 27px;
+
+  background-image: url('../img/waffel.jpg');
+  background-position: top left;
+  border-radius: 16px;
+}
+
+.info-header {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+
+  list-style: none;
+}
+
+.advantages-list-item {
+  position: relative;
+  width: 540px;
+  padding-top: 14px;
+  margin-bottom: 19px;
+  padding-left: 55px;
+}
+
+.advantages-list-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.advantages-list-item:nth-child(1)::before {
+  background-image: url('../img/ice-cream.svg');
+}
+
+.advantages-list-item:nth-child(2)::before {
+  background-image: url('../img/cow.svg');
+}
+
+.advantages-list-item:nth-child(3)::before {
+  background-image: url('../img/eco.svg');
+}
+
+.advantages-list-item:nth-child(4)::before {
+  background-image: url('../img/thermometer.svg');
+}
 /* CATALOG */
 
 /* FOOTER */
