@@ -736,6 +736,61 @@ section.info-block {
   height: 44px;
 }
 
+/* MAP AND CONTACTS */
+
+section.contacts-and-map {
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  min-height: 430px;
+  padding: 0 27px;
+
+  background-image: url('../img/map.png');
+  background-size: cover;
+}
+
+.pin {
+  position: absolute;
+  top: 136px;
+  left: 266px;
+
+  width: 80px;
+  height: 140px;
+
+  background-image: url('../img/pin.svg');
+  background-size: cover;
+}
+
+.contacts {
+  width: 303px;
+  min-height: 306px;
+  padding: 30px 25px;
+
+  background-color: var(--gray-8);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts-label {
+
+}
+
+.contacts-content {
+
+}
+
+.contacts .orange-button {
+  height: 43px;
+  width: 100%;
+}
+
 /* CATALOG */
 
 /* FOOTER */
