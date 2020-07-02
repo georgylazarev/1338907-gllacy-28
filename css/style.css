@@ -519,9 +519,8 @@ img {
 }
 
 /* GOODS HIT */
-
-.goods-hit {
-
+section.goods-hit {
+  margin: 0;
 }
 
 .goods-list {
@@ -537,6 +536,7 @@ img {
 
 .goods-list-item {
   width: 267px;
+  margin-top: 40px;
 }
 
 .goods-box {
@@ -786,6 +786,84 @@ section.contacts-and-map {
 
 /* CATALOG */
 
+section.goods-catalog {
+  margin: 0;
+}
+
+/* PAGINATOR */
+
+.paginator {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--white-20);
+  padding-bottom: 30px;
+  padding-top: 80px;
+  margin: 0 27px;
+}
+
+.paginator-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.paginator-list-item {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backward::before {
+  content: "";
+  height: 26px;
+  width: 23px;
+  background-image: url("../img/icon-left-small.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.forward::before {
+  content: "";
+  height: 26px;
+  width: 23px;
+  background-image: url("../img/icon-right-small.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.paginator-link {
+  display: block;
+  width: 26px;
+
+  line-height: 26px;
+  text-align: center;
+
+  border-radius: 50%;
+}
+
+.paginator-link:not(.paginator-active):not(.forward):not(.backward):hover {
+  background-color: var(--white-20);
+}
+
+.paginator-link:not(.paginator-active):not(.forward):not(.backward):active {
+  background-color: var(--base-white);
+  color: var(--base-black);
+}
+
+.paginator-disabled::before {
+  opacity: 0.2;
+}
+
+.paginator-active {
+  background-color: var(--base-white);
+}
+
 /* FOOTER */
 
 .page-footer {
@@ -860,24 +938,21 @@ section.contacts-and-map {
   display: flex;
 
   height: 40px;
+  width: 327px;
   padding: 0;
   margin: 0;
 
   list-style: none;
-
-  outline: 1px solid yellow;
 }
 
 .documents-list-item {
-  margin-left: 32px;
-
-  outline: 1px solid blue;
+  margin-left: 22px;
 }
 
 .heart::before {
   position: absolute;
   top: 3px;
-  left: 10px;
+  left: 0px;
 
   width: 15px;
   height: 13px;
