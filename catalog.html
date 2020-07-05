@@ -93,21 +93,41 @@
             </fieldset>
             <fieldset class="filters-fieldset">
               <legend class="fieldset-legend">Цена: 100 ₽ – 500 ₽</legend>
+              <div class="price-block">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle-min"></div>
+                <div class="toggle-max"></div>
+              </div>
             </fieldset>
             <fieldset class="filters-fieldset">
               <legend class="fieldset-legend">Жирность:</legend>
-              <label class="filters-radio"><input type="radio" name="fat" value="0">0%</label>
-              <label class="filters-radio"><input type="radio" name="fat" value="10" checked>до 10%</label>
-              <label class="filters-radio"><input type="radio" name="fat" value="30">до 30%</label>
-              <label class="filters-radio"><input type="radio" name="fat" value="30-plus">выше 30%</label>
+              <div class="fat">
+                <input class="visually-hidden filters-radio" type="radio" name="fat" value="0" id="radio-0">
+                <label for="radio-0" class="filters-radio-label" for="radio-0">0%</label>
+                <input class="visually-hidden filters-radio" type="radio" name="fat" value="10" id="radio-10" checked>
+                <label for="radio-10" class="filters-radio-label">до 10%</label>
+                <input class="visually-hidden filters-radio" type="radio" name="fat" value="30" id="radio-30">
+                <label for="radio-30" class="filters-radio-label">до 30%</label>
+                <input class="visually-hidden filters-radio" type="radio" name="fat" value="30-plus" id="radio-30-plus">
+                <label for="radio-30-plus" class="filters-radio-label">выше 30%</label>
+              </div>
             </fieldset>
             <fieldset class="filters-fieldset">
               <legend class="fieldset-legend">Наполнители:</legend>
-              <label class="filters-checkbox"><input type="checkbox" name="filler-chocolate" checked>шоколадные</label>
-              <label class="filters-checkbox"><input type="checkbox" name="filler-shugar" checked>сахарные присыпки</label>
-              <label class="filters-checkbox"><input type="checkbox" name="filler-fruits">фрукты</label>
-              <label class="filters-checkbox"><input type="checkbox" name="filler-syrup">сиропы</label>
-              <label class="filters-checkbox"><input type="checkbox" name="filler-jam">джемы</label>
+              <div class="filler">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filler-chocolate" id="filler-chocolate" checked>
+                <label class="filters-checkbox-label" for="filler-chocolate">шоколадные</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filler-shugar" id="filler-shugar" checked>
+                <label class="filters-checkbox-label" for="filler-shugar">сахарные присыпки</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filler-fruit" id="filler-fruit">
+                <label class="filters-checkbox-label" for="filler-fruit">фрукты</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filler-syrup" id="filler-syrup">
+                <label class="filters-checkbox-label" for="filler-syrup">сиропы</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filler-jam" id="filler-jam">
+                <label class="filters-checkbox-label" for="filler-jam">джемы</label>
+              </div>
             </fieldset>
             <button class="filters-submit" type="submit">Применить</button>
           </form>
