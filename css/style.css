@@ -249,6 +249,10 @@ img {
 }
 
 .breadcrumbs-active {
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: var(--base-white);
   border-bottom: 0;
 }
 
@@ -431,7 +435,8 @@ img {
 
   padding: 0 27px;
   padding-top: 9px;
-}
+  padding-bottom: 28px;
+  }
 
 .header-first-row {
   justify-content: space-between;
@@ -964,9 +969,45 @@ section.contacts-and-map {
 }
 
 /* CATALOG */
+section.mane-header {
+  margin-top: 0;
+}
 
 section.goods-catalog {
   margin: 0;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 22px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.15561 3L0 0.666562L0.615764 0L3.38714 3L0.615764 6L0 5.33344L2.15561 3Z' fill='white'/%3E%3Cpath d='M4.76847 3L2.61286 0.666562L3.22863 0L6 3L3.22863 6L2.61286 5.33344L4.76847 3Z' fill='white'/%3E%3C/svg%3E");
+    position: absolute;
+    width: 22px;
+    text-align: center;
+}
+
+/* FILTERS */
+
+.section-header {
+  margin: 0;
+  padding: 0;
 }
 
 /* PAGINATOR */
