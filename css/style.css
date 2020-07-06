@@ -33,6 +33,7 @@
   --white-20: rgba(255, 255, 255, 0.2);
   --black-30: rgba(0, 0, 0, 0.3);
   --very-light-red-3-30: rgba(255, 188, 158, 0.3);
+  --white-40: rgba(255, 255, 255, 0.4);
   --semi-gray-50: rgba(248, 247, 244, 0.5);
   --white-50: rgba(255, 255, 255, 0.5);
   --gray-52: rgba(178, 178, 178, 0.52);
@@ -470,6 +471,7 @@ input[type="radio"].visually-hidden {
 .main-menu {
   display: flex;
   list-style: none;
+  position: relative;
 }
 
 .main-menu-link,
@@ -485,7 +487,9 @@ input[type="radio"].visually-hidden {
 .sub-menu-wrapper {
   position: absolute;
   display: none;
-  padding-top: 15px;
+  top: 28px;
+  padding-top: 5px;
+  z-index: 3;
 }
 
 .sub-menu {
@@ -1274,8 +1278,8 @@ section.filters {
 
 .sort-wrapper:hover,
 .sort-wrapper:hover .sort {
-  background-color: var(--base-white);
   color: var(--gray-1);
+  cursor: pointer;
 }
 
 .sort-wrapper::after {
@@ -1738,8 +1742,16 @@ section.slider {
   cursor: pointer;
 }
 
+.slider-controls button:not(.current):hover {
+  background-color: var(--white-40);
+}
+
+.slider-controls button:not(.current):active {
+  background-color: var(--base-white);
+}
+
 .slider-controls .current {
-  background-color: #ffffff;
+  background-color: var(--base-white);
 }
 
 /* BLANK */
