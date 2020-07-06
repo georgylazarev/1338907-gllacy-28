@@ -434,13 +434,17 @@ input[type="radio"].visually-hidden {
 
 /* PLACEHOLDERS */
 
-.subscribe-email::placeholder {
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder {
   height: 24px;
 
   font-size: 16px;
+  font-weight: normal;
   line-height: 24px;
   color: var(--gray-4);
 }
+
 
 /* HEADER */
 
@@ -580,6 +584,7 @@ input[type="radio"].visually-hidden {
   height: 44px;
   padding: 0 15px;
   margin: 0;
+  font-weight: bold;
   border: 1px solid var(--semi-gray-2);
   border-radius: 4px;
 }
@@ -646,6 +651,7 @@ input[type="radio"].visually-hidden {
   height: 44px;
   padding: 0 15px;
   margin: 0;
+  font-weight: bold;
   border: 1px solid var(--semi-gray-2);
   border-radius: 4px;
 }
@@ -1134,6 +1140,7 @@ section.info-block {
   height: 44px;
   padding-left: 14px;
 
+  font-weight: bold;
   border: 1px solid var(--gray-52);
   border-radius: 6px;
 
@@ -1877,12 +1884,13 @@ section.slider {
 }
 
 .popup-field {
-  margin-bottom: 20px;
+  width: 267px;
   height: 44px;
+  padding: 16px 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 4px;
-  padding: 16px 14px;
-  width: 267px;
 }
 
 .popup-text {
