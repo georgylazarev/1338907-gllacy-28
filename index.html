@@ -49,9 +49,41 @@
             </nav>
 
             <div class="header-buttons">
-              <a class="search-link" href="blank.html"><span class="visually-hidden">Поиск</span></a>
-              <a class="auth-link" href="blank.html">Вход</a>
-              <button class="basket">Пусто</button>
+              <div class="header-buttons-wrapper">
+                <a class="search-link" href="blank.html"><span class="visually-hidden">Поиск</span></a>
+                <div class="search-block-wrapper">
+                  <div class="search-block">
+                    <form name="search" action="https://echo.htmlacademy.ru" method="get">
+                      <label class="visually-hidden">Поиск:</label>
+                      <input class="search-field" type="text" placeholder="Крем-брюле">
+                      <button class="visually-hidden" type="submit">Найти</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="header-buttons-wrapper">
+                <a class="auth-link" href="blank.html">Вход</a>
+                <div class="auth-block-wrapper">
+                  <div class="auth-block">
+                    <form class="auth-form" name="auth" action="https://echo.htmlacademy.ru" method="get">
+                      <label class="visually-hidden" for="login">Логин:</label>
+                      <input class="auth-field" type="text" name="login" id="login" placeholder="email@example.com">
+                      <label class="visually-hidden" for="password">Пароль:</label>
+                      <input class="auth-field" type="password" name="password" id="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;">
+                      <div class="auth-bottom">
+                        <button class="orange-button" type="submit">Войти</button>
+                        <div>
+                          <a class="auth-form-link" href="blank.html">Забыли пароль?</a>
+                          <a class="auth-form-link" href="blank.html">Новая регистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="header-buttons-wrapper">
+                <button class="basket">Пусто</button>
+              </div>
             </div>
           </div>
           <div class="header-second-row">
