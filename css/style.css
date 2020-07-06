@@ -120,6 +120,7 @@ input[type=password] {
   height: 44px;
   padding: 16px 14px;
   margin: 0;
+
   font-weight: bold;
   border: 1px solid var(--gray-52);
   border-radius: 4px;
@@ -136,6 +137,19 @@ input[type=email]:focus,
 input[type=password]:focus {
   outline: 0;
   border: 2px solid var(--blue-52);
+}
+
+/* PLACEHOLDERS */
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+  height: 24px;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: var(--gray-4);
 }
 
 /* TEXT AND FONTS */
@@ -457,20 +471,6 @@ input[type=password]:focus {
   text-decoration: none;
 }
 
-/* PLACEHOLDERS */
-
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-input[type=password]::placeholder {
-  height: 24px;
-
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 24px;
-  color: var(--gray-4);
-}
-
-
 /* HEADER */
 
 .page-header {
@@ -505,7 +505,10 @@ input[type=password]::placeholder {
 
 .main-menu-link,
 .main-menu-active {
-  padding: 10px 13px;
+  padding: 0 13px;
+  height: 31px;
+  display: flex;
+  align-items: center;
   border-radius: 26px;
 }
 
@@ -625,9 +628,10 @@ input[type=password]::placeholder {
 }
 
 .auth-link::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='21' height='19' viewBox='0 0 21 19'%3E%3Cg fill='%23fff'%3E%3Cpath d='M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z'/%3E%3Cpath d='M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z'/%3E%3C/g%3E%3C/svg%3E%0A");
   position: absolute;
   left: 16px;
+  top: 7px;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='21' height='19' viewBox='0 0 21 19'%3E%3Cg fill='%23fff'%3E%3Cpath d='M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z'/%3E%3Cpath d='M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 .auth-link:hover::before {
@@ -708,9 +712,10 @@ input[type=password]::placeholder {
 }
 
 .basket::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20'%3E%3Cg fill='%23FFF'%3E%3Cpath d='M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z'/%3E%3Ccircle cx='6.984' cy='18' r='2'/%3E%3Ccircle cx='15.984' cy='18' r='2'/%3E%3C/g%3E%3C/svg%3E");
   position: absolute;
+  top: 6px;
   left: 16px;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20'%3E%3Cg fill='%23FFF'%3E%3Cpath d='M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z'/%3E%3Ccircle cx='6.984' cy='18' r='2'/%3E%3Ccircle cx='15.984' cy='18' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .basket:hover::before {
@@ -860,9 +865,10 @@ input[type=password]::placeholder {
 
 /* PROMOTION */
 
-.promotion {
+section.promotion {
   justify-content: space-between;
   display: flex;
+  margin-top: 35px;
 }
 
 .promotion-block {
@@ -1004,6 +1010,7 @@ section.info-block {
   padding-top: 24px;
   padding-left: 20px;
   padding-bottom: 17px;
+  height: 306px;
 
   margin-right: 27px;
   margin-left: 27px;
@@ -1245,14 +1252,13 @@ section.goods-catalog {
 
 section.filters {
   margin-top: 15px;
-  width: 900px;
 }
 
 .filters-form {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .filters-fieldset {
@@ -1284,6 +1290,7 @@ section.filters {
   position: relative;
   background-color: var(--white-20);
   border-radius: 20px;
+  margin-right: 15px;
 }
 
 .sort-wrapper:hover,
@@ -1313,6 +1320,7 @@ section.filters {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-right: 15px;
 }
 
 .scale {
@@ -1364,6 +1372,10 @@ section.filters {
   display: flex;
   align-items: center;
   padding: 0 15px;
+}
+
+.fat {
+  min-width: 425px;
 }
 
 .fat .filters-radio-label:not(:last-child),
@@ -1424,6 +1436,14 @@ section.filters {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill-opacity='0.4' fill='%23FFFFFF' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3Ccircle fill-opacity='0.4' fill='%23FFFFFF' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E");
 }
 
+.filler {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 711px;
+  margin-right: 14px;
+}
+
 .filler .filters-checkbox + .filters-checkbox-label::before {
   content: "";
   position: absolute;
@@ -1470,7 +1490,7 @@ section.filters {
 
 .filters-submit {
   height: 36px;
-  padding: 0 19px;
+  width: 144px;
   background-color: var(--white-20);
   border: 2px solid var(--base-white);
   border-radius: 20px;
@@ -1711,7 +1731,7 @@ section.filters {
 
 section.slider {
   position: relative;
-  padding-top: 321px;
+  padding-top: 255px;
   text-align: center;
   color: #ffffff;
 }
@@ -1742,20 +1762,20 @@ section.slider {
 .button {
   display: inline-block;
   padding: 12px 44px;
-  font-weight: 600;
   font-size: 31px;
+  font-weight: 600;
   line-height: 41px;
-  text-align: center;
   color: #ffffff;
-  vertical-align: top;
+  text-align: center;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  vertical-align: top;
+  cursor: pointer;
   background: #f26843;
   background: linear-gradient(to bottom, #f26843, #e74a35);
+  border: none;
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border: none;
-  cursor: pointer;
 }
 
 .button:hover {
@@ -1769,23 +1789,23 @@ section.slider {
 }
 
 .slider-controls {
+  justify-content: space-between;
   position: absolute;
-  bottom: 63px;
-  left: 0;
+  bottom: 28px;
+  left: 27px;
   z-index: 20;
   display: flex;
-  width: 67px;
-  justify-content: space-between;
+  width: 79px;
 }
 
 .slider-controls button {
+  width: 21px;
+  height: 21px;
   padding: 0;
-  width: 17px;
-  height: 17px;
+  cursor: pointer;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .slider-controls button:not(.current):hover {
