@@ -519,6 +519,7 @@ input[type=password]::placeholder {
 .main-menu {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -633,9 +634,9 @@ input[type=password]::placeholder {
 .auth-link {
     position: relative;
     display: block;
-    width: 92px;
     height: 32px;
     padding: 8px 0;
+    padding-right: 16px;
     padding-left: 44px;
     background-color: var(--white-20);
     border-radius: 16px;
@@ -672,7 +673,6 @@ input[type=password]::placeholder {
     justify-content: center;
     display: flex;
     width: 277px;
-    height: 214px;
     padding: 20px 18px;
     background-color: var(--very-light-orange);
     border-radius: 4px;
@@ -684,24 +684,22 @@ input[type=password]::placeholder {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 
-.auth-field {
+input.auth-field {
     width: 241px;
+    margin-bottom: 20px;
 }
 
 .auth-bottom {
     justify-content: space-between;
     display: flex;
     width: 242px;
-    height: 44px;
 }
 
 .auth-bottom .orange-button {
-    width: 103px;
     height: 44px;
+    padding: 0 25px;
     margin: 0;
 }
 
@@ -775,6 +773,17 @@ input[type=password]::placeholder {
     background-color: var(--very-light-orange);
     border-radius: 4px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.basket-list {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .basket-string {
@@ -853,7 +862,7 @@ input[type=password]::placeholder {
 
 .basket-block > .orange-button {
     align-self: flex-end;
-    width: 172px;
+    padding: 0 15px;
     height: 44px;
     margin-top: 18px;
 }
@@ -886,8 +895,10 @@ input[type=password]::placeholder {
 
 section.promotion {
     justify-content: space-between;
+    flex-wrap: wrap;
     display: flex;
     margin-top: 35px;
+    margin-bottom: -20px;
 }
 
 .promotion-block {
@@ -902,6 +913,7 @@ section.promotion {
     padding-bottom: 22px;
     padding-left: 16px;
     border-radius: 16px;
+    margin-bottom: 20px;
 }
 
 .promotion-block h2 {
@@ -1000,8 +1012,8 @@ section.goods-hit {
 }
 
 .goods-hover .orange-button {
-    width: 200px;
     height: 44px;
+    padding: 0 16px;
 }
 
 .goods-box:hover + .goods-hover,
@@ -1023,7 +1035,7 @@ section.info-block {
     padding-top: 24px;
     padding-left: 20px;
     padding-bottom: 17px;
-    height: 306px;
+    min-height: 306px;
     margin-right: 27px;
     margin-left: 27px;
     background-image: url('../img/waffel.jpg');
@@ -1086,6 +1098,7 @@ section.info-block {
 .bottom-blocks {
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
     padding: 0 27px;
     margin-top: 40px;
 }
@@ -1094,6 +1107,7 @@ section.info-block {
     width: 560px;
     padding-top: 23px;
     padding-left: 20px;
+    margin-bottom: 20px;
     background-color: var(--base-white);
     background-image: url('../img/strawberry-back.jpg');
     background-size: cover;
@@ -1118,6 +1132,7 @@ section.info-block {
     width: 560px;
     min-height: 220px;
     padding: 5px;
+    margin-bottom: 20px;
     background-color: var(--base-white);
     background-image: url('../img/post-back.png');
     background-size: cover;
@@ -1156,8 +1171,8 @@ section.info-block {
 }
 
 .subscribe-form .orange-button {
-    width: 130px;
     height: 44px;
+    padding: 0 19px;
 }
 
 /* MAP AND CONTACTS */
@@ -1170,6 +1185,7 @@ section.contacts-and-map {
     width: 100%;
     min-height: 430px;
     padding: 0 27px;
+    margin-top: 20px;
     background-image: url('../img/map.png');
     background-size: cover;
 }
@@ -1197,8 +1213,8 @@ section.contacts-and-map {
 }
 
 .contacts .orange-button {
-    width: 100%;
-    height: 43px;
+    min-width: 100%;
+    height: 44px;
 }
 
 /* CATALOG */
@@ -1581,7 +1597,7 @@ section.filters {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 103px;
+    min-height: 103px;
     padding: 0 27px;
 }
 
@@ -1589,6 +1605,7 @@ section.filters {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -1673,7 +1690,6 @@ section.filters {
     align-items: flex-start;
     display: flex;
     width: 190px;
-    height: 60px;
 }
 
 .design-by p {
@@ -1684,7 +1700,7 @@ section.filters {
 /* SLIDESHOW */
 
 .page-wrapper {
-    min-width: 940px;
+    min-width: 1200px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -1839,7 +1855,7 @@ section.slider {
     position: relative;
     display: flex;
     width: 477px;
-    height: 441px;
+    padding-bottom: 27px;
     background-color: var(--very-light-orange);
     border-radius: 4px;
 }
@@ -1916,6 +1932,6 @@ input.popup-field {
 
 .popup .orange-button {
     align-self: flex-end;
-    width: 140px;
+    padding: 0 24px;
     height: 44px;
 }
