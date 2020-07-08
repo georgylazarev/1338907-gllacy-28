@@ -1843,7 +1843,7 @@ section.slider {
     top: 0;
     left: 0;
     z-index: 5;
-    display: none;
+    display: flex;
     width: 100vw;
     height: 100vh;
     background-color: var(--black-30);
