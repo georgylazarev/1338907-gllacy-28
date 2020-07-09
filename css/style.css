@@ -116,7 +116,7 @@ input[type=text],
 input[type=email],
 input[type=password] {
     height: 44px;
-    padding: 16px 14px;
+    padding: 10px 14px;
     margin: 0;
     font-weight: bold;
     border: 1px solid var(--gray-52);
@@ -498,7 +498,7 @@ input[type=password]::placeholder {
     display: flex;
     padding: 0 27px;
     padding-top: 9px;
-    padding-bottom: 28px;
+    padding-bottom: 20px;
 }
 
 .header-first-row {
@@ -514,6 +514,8 @@ input[type=password]::placeholder {
 
 .page-header nav {
     margin-right: auto;
+    margin-left: -28px;
+    margin-top: -10px;
 }
 
 .main-menu {
@@ -533,7 +535,7 @@ input[type=password]::placeholder {
 }
 
 .main-menu-item:not(:last-child) {
-    margin-right: 19px;
+    margin-right: 7px;
 }
 
 .sub-menu-wrapper {
@@ -576,6 +578,7 @@ input[type=password]::placeholder {
 .header-buttons {
     position: relative;
     display: flex;
+    margin-top: -6px;
 }
 
 .header-buttons-wrapper {
@@ -791,8 +794,8 @@ input.auth-field {
     justify-content: space-around;
     display: flex;
     width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
+    height: 33px;
+    margin-bottom: 18px;
 }
 
 .basket-delete {
@@ -930,7 +933,7 @@ section.promotion {
 
 .promotion-block a {
     align-self: flex-end;
-    padding: 15px 22px;
+    padding: 11px 22px;
 }
 
 .raspberry-promotion {
@@ -962,7 +965,7 @@ section.goods-hit {
 .goods-list-item {
     position: relative;
     width: 267px;
-    margin-top: 40px;
+    margin-top: 38px;
 }
 
 .goods-box {
@@ -973,7 +976,7 @@ section.goods-hit {
 
 .goods-box figcaption {
     text-align: center;
-    margin-top: 13px;
+    margin-top: 7px;
 }
 
 .goods-item {
@@ -982,7 +985,7 @@ section.goods-hit {
 
 .goods-price {
     position: absolute;
-    top: 216px;
+    top: 208px;
     left: 0;
 }
 
@@ -1036,6 +1039,7 @@ section.info-block {
     padding-left: 20px;
     padding-bottom: 17px;
     min-height: 306px;
+    margin-top: 40px;
     margin-right: 27px;
     margin-left: 27px;
     background-image: url('../img/waffel.jpg');
@@ -1044,7 +1048,7 @@ section.info-block {
 }
 
 .info-header {
-    margin: 0;
+    margin: 5px auto;
     padding: 0;
 }
 
@@ -1060,10 +1064,10 @@ section.info-block {
 
 .advantages-list-item {
     position: relative;
-    width: 540px;
-    padding-top: 14px;
+    width: 533px;
+    padding-top: 10px;
     padding-left: 55px;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
 }
 
 .advantages-list-item::before {
@@ -1105,7 +1109,7 @@ section.info-block {
 
 .news-blog {
     width: 560px;
-    padding-top: 23px;
+    padding-top: 18px;
     padding-left: 20px;
     margin-bottom: 20px;
     background-color: var(--base-white);
@@ -1117,7 +1121,7 @@ section.info-block {
 .news-blog-header {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .news-blog-link {
@@ -1145,8 +1149,8 @@ section.info-block {
     display: flex;
     width: 100%;
     height: 100%;
-    padding-top: 29px;
-    padding-left: 16px;
+    padding-top: 24px;
+    padding-left: 21px;
     background-color: var(--very-light-orange);
     border-radius: 16px;
 }
@@ -1273,6 +1277,7 @@ section.filters {
 .filters-fieldset {
     height: 60px;
     padding: 0;
+    margin: 0;
     margin-top: 14px;
 }
 
@@ -1389,7 +1394,7 @@ section.filters {
 
 .fat .filters-radio-label:not(:last-child),
 .filler .filters-checkbox-label:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 19px;
 }
 
 .fat .filters-radio-label,
@@ -1525,7 +1530,7 @@ section.filters {
     justify-content: flex-end;
     display: flex;
     width: auto;
-    padding-top: 80px;
+    padding-top: 79px;
     padding-bottom: 30px;
     margin: 0 27px;
     border-bottom: 1px solid var(--white-20);
@@ -1543,12 +1548,12 @@ section.filters {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 30px;
+    width: 28px;
 }
 
 .backward::before {
     display: block;
-    width: 23px;
+    width: 28px;
     height: 26px;
     background-image: url("../img/icon-left-small.svg");
     background-position: left;
@@ -1558,7 +1563,7 @@ section.filters {
 
 .forward::before {
     display: block;
-    width: 23px;
+    width: 28px;
     height: 26px;
     background-image: url("../img/icon-right-small.svg");
     background-position: right;
@@ -1731,7 +1736,7 @@ section.filters {
 
 section.slider {
     position: relative;
-    padding-top: 255px;
+    padding-top: 262px;
     color: #ffffff;
     text-align: center;
 }
@@ -1843,7 +1848,7 @@ section.slider {
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     width: 100vw;
     height: 100vh;
     background-color: var(--black-30);
