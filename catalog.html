@@ -13,7 +13,7 @@
         <header class="page-header">
           <div class="header-first-row">
             <a class="logo" href="index.html">
-              <img src="img/logo.svg" alt="Логотип Глейси" width="154px" height="64px">
+              <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
             </a>
             <nav>
               <ul class="main-menu">
@@ -54,8 +54,8 @@
                 <div class="search-block-wrapper">
                   <div class="search-block">
                     <form name="search" action="https://echo.htmlacademy.ru" method="get">
-                      <label class="visually-hidden">Поиск:</label>
-                      <input class="search-field" name="search" type="text" placeholder="Крем-брюле">
+                      <label class="visually-hidden" for="search">Поиск:</label>
+                      <input class="search-field" name="search" type="text" id="search" placeholder="Крем-брюле">
                       <button class="visually-hidden" type="submit">Найти</button>
                     </form>
                   </div>
@@ -140,7 +140,8 @@
               <fieldset class="filters-fieldset">
                 <legend class="fieldset-legend">Сортировка:</legend>
                 <div class="sort-wrapper">
-                  <select class="sort" name="sort">
+                  <label class="visually-hidden" for="sort">Порядок сортировки</label>
+                  <select class="sort" name="sort" id="sort">
                     <option value="popular">по популярности</option>
                     <option value="price-up">сначала недорогие</option>
                     <option value="price-down">сначала дорогие</option>
@@ -162,11 +163,11 @@
                 <legend class="fieldset-legend">Жирность:</legend>
                 <div class="fat">
                   <input class="visually-hidden filters-radio" type="radio" name="fat" value="0" id="radio-0" disabled>
-                  <label for="radio-0" class="filters-radio-label" for="radio-0">0%</label>
+                  <label class="filters-radio-label" for="radio-0">0%</label>
                   <input class="visually-hidden filters-radio" type="radio" name="fat" value="10" id="radio-10" checked>
-                  <label for="radio-10" class="filters-radio-label">до 10%</label>
+                  <label class="filters-radio-label" for="radio-10">до 10%</label>
                   <input class="visually-hidden filters-radio" type="radio" name="fat" value="30" id="radio-30">
-                  <label for="radio-30" class="filters-radio-label">до 30%</label>
+                  <label class="filters-radio-label" for="radio-30">до 30%</label>
                   <input class="visually-hidden filters-radio" type="radio" name="fat" value="30-plus" id="radio-30-plus">
                   <label for="radio-30-plus" class="filters-radio-label">выше 30%</label>
                 </div>
@@ -195,7 +196,7 @@
             <ul class="goods-list">
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-orange.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-orange.jpg" alt="Апельсиновое мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">310 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
@@ -207,7 +208,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-coffee.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-coffee.jpg" alt="Кофейное мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">380 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочно-кофейное с кусочками шоколада</span>
@@ -219,7 +220,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-strawberry.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-strawberry.jpg" alt="Клубничное мороженое с присыпкой в виде сердечек" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">355 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочно-клубничное с присыпкой из белого шоколада</span>
@@ -231,7 +232,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-caramel.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-caramel.jpg" alt="Карамельное мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">415 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное крем-брюле с карамельной подливкой</span>
@@ -243,7 +244,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-lingonberry.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-lingonberry.jpg" alt="Красное-белое мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">325 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное с брусничным джемом</span>
@@ -255,7 +256,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-blueberries.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-blueberries.jpg" alt="Фиолетовое мороженое с ягодами черники" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">410 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочно-черничное с цельными ягодами черники</span>
@@ -267,7 +268,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-lemon.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-lemon.jpg" alt="Лимонное пороженое с разноцветной присыпкой" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">315 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочно-лимонное с карамельной присыпкой</span>
@@ -279,7 +280,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-chocolate-chips.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-chocolate-chips.jpg" alt="Мороженое с шоколадной присыпкой" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">320 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное с шоколадной стружкой</span>
@@ -291,7 +292,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-vanilla.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-vanilla.jpg" alt="Мороженое с кусочками шоколада" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">440 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочно-ванильное с кусочками шоколада</span>
@@ -303,7 +304,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-menthol.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-menthol.jpg" alt="Бирюзовое мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">435 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочноe с ментоловым сиропом</span>
@@ -315,7 +316,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-black-chocolate.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-black-chocolate.jpg" alt="Мороженое с кусочками тёмного шоколада" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">355 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное с кусочками черного шоколада</span>
@@ -327,7 +328,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box">
-                  <img class="goods-item" src="img/cream-mint.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-mint.jpg" alt="Зелёное мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">420 ₽<span class="kg">/кг</span></span>
                     <span  class="goods-box-caption">Сливочное с мятным сиропом</span>
@@ -406,7 +407,7 @@
 
           <div class="design-by">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img class="designer-logo" src="img/logo-htmlacademy.svg" alt="Логотип разработчика сайта htmlacademy.ru" width="108px" height="39px">
+              <img class="designer-logo" src="img/logo-htmlacademy.svg" alt="Логотип разработчика сайта htmlacademy.ru" width="108" height="39">
             </a>
             <p>
               Сделано в <a class="designer-link white-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019

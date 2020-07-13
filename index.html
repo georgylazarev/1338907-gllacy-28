@@ -13,7 +13,7 @@
         <header class="page-header">
           <div class="header-first-row">
             <a class="logo">
-              <img src="img/logo.svg" alt="Логотип Глейси" width="154px" height="64px">
+              <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
             </a>
             <nav>
               <ul class="main-menu">
@@ -54,8 +54,8 @@
                 <div class="search-block-wrapper">
                   <div class="search-block">
                     <form name="search" action="https://echo.htmlacademy.ru" method="get">
-                      <label class="visually-hidden">Поиск:</label>
-                      <input class="search-field" name="search" type="text" placeholder="Крем-брюле">
+                      <label class="visually-hidden" for="search">Поиск:</label>
+                      <input class="search-field" name="search" type="text" id="search" placeholder="Крем-брюле">
                       <button class="visually-hidden" type="submit">Найти</button>
                     </form>
                   </div>
@@ -153,7 +153,7 @@
             <ul class="goods-list">
               <li class="goods-list-item">
                   <figure class="goods-box hit">
-                    <img class="goods-item" src="img/cream-orange.jpg" alt="" width="267px" height="267px">
+                    <img class="goods-item" src="img/cream-orange.jpg" alt="Апельсиновое мороженое" width="267" height="267">
                     <figcaption>
                       <span class="goods-price">310 ₽<span class="kg">/кг</span></span>
                       <span class="goods-box-caption">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
@@ -165,7 +165,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box hit">
-                  <img class="goods-item" src="img/cream-coffee.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-coffee.jpg" alt="Кофейное мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">380 ₽<span class="kg">/кг</span></span>
                     <span class="goods-box-caption">Сливочно-кофейное с кусочками шоколада</span>
@@ -177,7 +177,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box hit">
-                  <img class="goods-item" src="img/cream-strawberry.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-strawberry.jpg" alt="Клубничное мороженое с присыпкой в виде сердечек" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">355 ₽<span class="kg">/кг</span></span>
                     <span class="goods-box-caption">Сливочно-клубничное с присыпкой из белого шоколада</span>
@@ -189,7 +189,7 @@
               </li>
               <li class="goods-list-item">
                 <figure class="goods-box hit">
-                  <img class="goods-item" src="img/cream-caramel.jpg" alt="" width="267px" height="267px">
+                  <img class="goods-item" src="img/cream-caramel.jpg" alt="Карамельное мороженое" width="267" height="267">
                   <figcaption>
                     <span class="goods-price">415 ₽<span class="kg">/кг</span></span>
                     <span class="goods-box-caption">Сливочное крем-брюле с карамельной подливкой</span>
@@ -297,7 +297,7 @@
 
           <div class="design-by">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img class="designer-logo" src="img/logo-htmlacademy.svg" alt="Логотип разработчика сайта htmlacademy.ru" width="108px" height="39px">
+              <img class="designer-logo" src="img/logo-htmlacademy.svg" alt="Логотип разработчика сайта htmlacademy.ru" width="108" height="39">
             </a>
             <p>
               Сделано в <a class="designer-link white-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
@@ -316,7 +316,8 @@
           <input class="popup-field user-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
           <label class="visually-hidden" for="user-email">Ваш email</label>
           <input class="popup-field user-email" type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
-          <textarea class="popup-text user-message" name="user-message" placeholder="В свободной форме" required></textarea>
+          <label class="visually-hidden" for="user-message">Ваше сообщение</label>
+          <textarea class="popup-text user-message" name="user-message" id="user-message" placeholder="В свободной форме" required></textarea>
           <button class="orange-button" type="submit">Отправить</button>
         </form>
       </div>
