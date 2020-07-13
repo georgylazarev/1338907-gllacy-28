@@ -253,7 +253,7 @@
                 <div class="contacts-content"><a href="tel:88124502525">8 812 450-25-25</a></div>
                 <div class="contacts-label">(с 10 до 20 ежедневно)</div>
               </div>
-              <a class="orange-button" href="blank.html">Форма обратной связи</a>
+              <a class="orange-button popup-button" href="blank.html">Форма обратной связи</a>
             </div>
           </section>
         </main>
@@ -313,13 +313,15 @@
         <h2 class="popup-header">Мы обязательно вам ответим!</h2>
         <form class="popup-form" name="popup-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="user-name">Ваше ФИО</label>
-          <input class="popup-field" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+          <input class="popup-field user-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
           <label class="visually-hidden" for="user-email">Ваш email</label>
-          <input class="popup-field" type="email" name="user-email" id="user-email" placeholder="email@example.com">
-          <textarea class="popup-text" name="user-message" placeholder="В свободной форме"></textarea>
+          <input class="popup-field user-email" type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+          <textarea class="popup-text user-message" name="user-message" placeholder="В свободной форме" required></textarea>
           <button class="orange-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
